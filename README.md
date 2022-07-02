@@ -1,4 +1,4 @@
-# PyroFilesStoreBot
+# Filestorebot
 NOTE: full source code is written by Abir hasan, i just changed some codes and made it easy to deploy and also added file forwarding protection.
 
 * **Language:** [Python3](https://www.python.org)
