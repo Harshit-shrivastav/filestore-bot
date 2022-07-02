@@ -1,5 +1,5 @@
 # PyroFilesStoreBot
-NOTE: full source code is written by Abir hasan, i just changed some codes and made it easy to deploy
+NOTE: full source code is written by Abir hasan, i just changed some codes and made it easy to deploy and also added file forwarding protection.
 
 * **Language:** [Python3](https://www.python.org)
 * **Library:** [Pyrogram](https://docs.pyrogram.org)
@@ -9,6 +9,7 @@ NOTE: full source code is written by Abir hasan, i just changed some codes and m
 - In Channel Add Bot as Admin with Edit Rights. When you will send any file or media in Channel it will Edit the Broadcast Message with Saved Link Button.
 - You can also Broadcast anythings via this Bot.
 - You can also Do Force Sub to a Channel to allow access the Bot.
+- Added file forwarding protection.
 
 ## Configs:
 - `API_ID` - Get this from [@TeleORG_Bot](https://t.me/TeleORG_Bot)
