@@ -177,10 +177,10 @@ async def start(bot, cmd):
             file_id = int(usr_cmd)
             send_stored_file = None
             if FORWARD_AS_COPY is True:
-                send_stored_file = await bot.copy_message(chat_id=cmd.from_user.id, from_chat_id=DB_CHANNEL,
+                send_stored_file = await bot.copy_message(chat_id=cmd.from_user.id, protect_content=True, from_chat_id=DB_CHANNEL,
                                                           message_id=file_id)
             elif FORWARD_AS_COPY is False:
-                send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=DB_CHANNEL,
+                send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, protect_content=True, from_chat_id=DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
                 f"**Here is Sharable Link of this file:** https://telegram.me/{BOT_USERNAME}?start={UR_CHANNEL}_{file_id}\n\n__To Retrive the Stored File, just open the link!__",
