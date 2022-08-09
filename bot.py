@@ -179,6 +179,10 @@ async def start(bot, cmd):
             if FORWARD_AS_COPY is True:
                 send_stored_file = await bot.copy_message(chat_id=cmd.from_user.id, protect_content=True, from_chat_id=DB_CHANNEL,
                                                           message_id=file_id)
+#fucking automatic deletion added
+                await asyncio.sleep(500)
+                await client.delete_messages(chat_id=cmd.from_user.id, message_id=file_id)
+#end lmao
             elif FORWARD_AS_COPY is False:
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, protect_content=True, from_chat_id=DB_CHANNEL,
                                                               message_ids=file_id)
