@@ -185,9 +185,16 @@ async def start(bot, cmd):
 #end lmao
             elif FORWARD_AS_COPY is False:
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, protect_content=True, from_chat_id=DB_CHANNEL,
-                                                              message_ids=file_id)
+                                                              message_id=file_id)
+ #fucking automatic deletion added
+                await asyncio.sleep(1800)
+                await client.delete_messages(chat_id=cmd.from_user.id, message_id=file_id)
+#end lmao                                                             
             await send_stored_file.reply_text(
                 f"**Here is Sharable Link of this file:** https://telegram.me/{BOT_USERNAME}?start={UR_CHANNEL}_{file_id}\n\n__To Retrive the Stored File, just open the link!__",
+                disable_web_page_preview=True, quote=True)
+            await send_stored_file.reply_text(
+                f"This file will automatically be deleted after 30 minnutes, so please save or forward it anywhere.",
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
