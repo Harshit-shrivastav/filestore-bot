@@ -34,7 +34,7 @@ A telegram file store bot that can store telegram files and give you unique link
 	- Put all banned channel IDs & Separate with space.
 - `UR_CHANNEL` - Your channel username.
 	- to set your channel in start button.
-- `UR_GROUP` - yur group username.
+- `UR_GROUP` - your group username.
 	-  to set your group in start button.
 
 ### Deploy Now:
