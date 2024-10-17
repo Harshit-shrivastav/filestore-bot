@@ -4,6 +4,9 @@ A telegram file store bot that can store telegram files and give you unique link
 * **Language:** [Python3](https://www.python.org)
 * **Library:** [Pyrogram](https://docs.pyrogram.org)
 
+### 🆓 If you want a free bot hosting checkout this article here:
+https://github.com/Harshit-shrivastav/Free-Telegram-bot-hosting
+
 ### Features:
 - In PM Just Forward or Send any file it will save on Database & give you the Access Link.
 - In Channel Add Bot as Admin with Edit Rights. When you will send any file or media in Channel it will Edit the Broadcast Message with Saved Link Button.
